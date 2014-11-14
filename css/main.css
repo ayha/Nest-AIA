@@ -108,6 +108,20 @@ h1, h2, h3, h4, h5, h6{
 	padding:5px 15px;
 }
 
+@media (max-width: 991px) {
+
+.collapse{
+	background:#FFFFFF;
+	
+}
+
+.collapse li{
+	float:none;
+	
+}
+
+}
+
 .nest_link{
 	margin-top:-80px;
 	text-align:center;
