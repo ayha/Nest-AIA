@@ -237,7 +237,7 @@ section .intro{
 
 
 #contact h2{
-	background-image:url(../images/faq_icon.png);	
+	background-image:url(../images/contact_icon.png);	
 }
 
 
@@ -248,14 +248,16 @@ section .intro{
 	background-repeat:no-repeat;
 	background-color:transparent;
 	min-height:710px;
+	border:1px solid #cccccc;
 }
 
 #mentorship .mentorship_content{
 	background-color:#ffffff;
-	width:500px;
+	max-width:500px;
+	width:100%;
 	height:550px;
 	position:relative;
-	
+	 
 	padding:25px;
 	text-align:center;
 }
@@ -266,7 +268,7 @@ section .intro{
 
 #mentorship .mentorship_content a.mentor_link{
 	color:#d31145;
-	font-size:1em;
+	font-size:0.9em;
 }
 
 #timeline {
@@ -297,16 +299,41 @@ section .intro{
 .faq_section h3{
 	font-size:1.2em;
 	color:#d31145;
-	background-image:url(../images/arrow_down.png);
-	background-position:left 2px;
-	background-repeat:no-repeat;
+	
 	padding-left:33px;
 	cursor:pointer;
+	
+    position:relative;
+    
 }
 
-.faq_section.active h3{
-	background-image:url(../images/arrow_up.png);
+.faq_section h3::before{
+	content: "";
+    position: absolute;
+    width: 26px;
+    height: 13px;
+    top: 2px;
+    left: 0px;
+    z-index: 1;
+	background-image:url(../images/arrow_down.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+	-webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+	
 }
+
+.faq_section.active h3::before{
+	 -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
 
 .faq{
 	margin-bottom:25px;
@@ -375,6 +402,16 @@ section .intro{
 	
 }
 
+.navbar-toggle{
+	margin-top:20px;
+}
+
+.navbar-toggle .icon-bar{
+	width:30px;
+	height:3px;
+	
+}
+
 @media (min-width: 991px) {
 	
 
@@ -433,6 +470,10 @@ section img{
 	
 }
 
+.navbar-nav>li>a{
+	border-bottom:1px solid #ccc;
+	
+}
 
 .navbar-nav>li>a:hover{
 	background:#999999;
@@ -449,6 +490,15 @@ section img{
 .navbar-nav>li>a.applynow:hover{
 	color:#ffffff;
 	background:#999999;
+	
+}
+
+}
+
+@media (max-width: 767px) {
+	html, body{
+	
+	font-size:12px;
 	
 }
 
