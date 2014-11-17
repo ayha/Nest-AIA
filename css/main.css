@@ -60,7 +60,7 @@ html, body{
 
 body {
     padding-top: 50px;
-	padding-bottom: 20px;
+	
 	
 }
 
@@ -348,15 +348,31 @@ section .intro{
 	text-indent:-9999px;
 	font-size:0.75em;
 	color:#fff;
+	opacity:0;
+	-webkit-transition: opacity 0.3s ease-out 0s;
+  -moz-transition: opacity 0.3s ease-out 0s;
+  -ms-transition: opacity 0.3s ease-out 0s;
+  -o-transition: opacity 0.3s ease-out 0s;
+  transition: opacity 0.3s ease-out 0s;
 }
 
-#sidenav ul.nav li a:hover{
+#sidenav ul.nav li a:hover, #sidenav ul.nav li a.active:hover{
 	background-color:#3b3c35;;
 	background-image:url(../images/sidenav_red_dot.png);
 	background-repeat:no-repeat;
 	background-position:right center;
 	text-indent:0;
+	opacity:1;
 
+}
+
+#sidenav ul.nav li a.active{
+	background-color:transparent;
+	background-image:url(../images/sidenav_red_dot.png);
+	background-repeat:no-repeat;
+	background-position:right center;
+	opacity:1;
+	
 }
 
 @media (min-width: 991px) {
@@ -449,5 +465,7 @@ section img{
 	margin:0;
 	font-size:0.8em;
 	color:#666;
+	line-height:0.7em;
+	margin-top:10px;
 }
 

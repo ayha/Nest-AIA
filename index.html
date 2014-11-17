@@ -21,7 +21,7 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div id="sidenav" class="sidenav" role="navigation">
+    <div id="sidenav" class="sidenav hidden-xs hidden-sm" role="navigation">
     	<ul class="nav">
     		
     	</ul>
@@ -40,15 +40,15 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-          	  <li><a href="#home" class="homelink">Home</a></li>
-              <li class="hidden-md hidden-lg"><a href="#howitworks">How It Works</a></li>
-              <li><a href="#access">Access</a></li>
-              <li  class="hidden-md hidden-lg"><a href="#who">Who Can Apply</a></li>
-              <li  class="hidden-md hidden-lg"><a href="#mentorship">Mentorship</a></li>
-              <li  class="hidden-md hidden-lg"><a href="#location">Location</a></li>
-              <li  class="hidden-md hidden-lg"><a href="#timeline">Timeline</a></li>
-              <li ><a href="#faqs">FAQS</a></li>
-              <li  class="hidden-md hidden-lg"><a href="#contact">Contact</a></li>
+          	  <li><a href="#home" data-section="home" class="homelink">Home</a></li>
+              <li class="hidden-md hidden-lg"><a href="#howitworks"  data-section="howitworks">How It Works</a></li>
+              <li><a href="#access" data-section="access">Access</a></li>
+              <li  class="hidden-md hidden-lg"><a href="#who" data-section="who" >Who Can Apply</a></li>
+              <li  class="hidden-md hidden-lg"><a href="#mentorship" data-section="mentorship" >Mentorship</a></li>
+              <li  class="hidden-md hidden-lg"><a href="#location" data-section="location">Location</a></li>
+              <li  class="hidden-md hidden-lg"><a href="#timeline" data-section="timeline">Timeline</a></li>
+              <li ><a href="#faqs" data-section="faqs">FAQS</a></li>
+              <li  class="hidden-md hidden-lg" data-section="contact"><a href="#contact" data-section="contact">Contact</a></li>
               <li><a href="https://angel.co/aia-accelerator-powered-by-nest" target="_blank" title="Apply Now" class="applynow">Apply Now</a></li>
             </ul>
             
@@ -59,12 +59,13 @@
     </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
+    <section name="home" id="home">
     <div class="jumbotron fullwidth header_banner">
       <div class="container">
       	<img  src="images/head_banner.jpg" alt="AIA Accelerator - Powered by NEST" title="AIA Accelerator - Powered by NEST" />
       </div>
     </div>
-
+</section>
  
       <section name="howitworks" id="howitworks">
       	   <div class="container">
