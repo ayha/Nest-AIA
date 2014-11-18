@@ -96,6 +96,10 @@ a:link, a:hover, a:visited, a:active{
 	
 }
 
+.clearfix{
+	clear:both;
+}
+
 h1, h2, h3, h4, h5, h6{
 	font-family:"dinbold", Arial, Helvetica, sans-serif;
 }
@@ -373,6 +377,7 @@ section .intro{
 	position:fixed;
 	right:30px;
 	top:250px;
+	z-index:100;
 }
 
 #sidenav ul.nav{
@@ -531,6 +536,21 @@ p.partners_title{
 	font-size:0.9em;
 }
 
+.sponsors{
+	z-index:2;
+	
+}
+
+.sponsor{
+	
+}
+
+.sponsor img{
+	width:100%;
+	
+	
+}
+
 .navbar{
 	/*height:110px;*/
 	
@@ -564,3 +584,37 @@ a.mobile_nest_link{
 	
 }
 
+/* 5 column layout */
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
