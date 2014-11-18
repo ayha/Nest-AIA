@@ -71,6 +71,14 @@ p, li{
 	
 }
 
+footer{
+	background-color:#000000;
+	font-size:0.8em;
+	text-align:right;
+	padding:25px;
+	
+}
+
 p{
 	margin-bottom:25px;
 }
@@ -114,6 +122,18 @@ h2{
 .header_banner{
 	margin-top:45px;
 	
+}
+
+p.partners_title{
+	margin-top:10px;
+	margin-left:25px;
+	font-size:0.9em;
+	text-transform:uppercase;
+}
+
+.partners_img{
+	width:100%;
+	max-width:1365px;
 }
 
 .jumbotron.fullwidth img{
@@ -341,6 +361,7 @@ section .intro{
 
 .faq .question, .faq .question p{
 	margin-bottom:5px;
+	font-family:"dinbold", Arial, Helvetica, sans-serif;
 }
 
 .faq .answer, .faq_answer p{
@@ -493,6 +514,8 @@ section img{
 	
 }
 
+
+
 }
 
 @media (max-width: 767px) {
@@ -502,12 +525,22 @@ section img{
 	
 }
 
+p.partners_title{
+	margin-top:10px;
+	margin-left:10px;
+	font-size:0.9em;
+}
+
+.navbar{
+	height:110px;
+	
+}
+
 }
 
 .nest_link{
 	margin-top:-80px;
 	text-align:center;
-	
 }
 
 .nest_link p{
@@ -517,5 +550,17 @@ section img{
 	color:#666;
 	line-height:0.7em;
 	margin-top:10px;
+}
+
+
+a.mobile_nest_link{
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:1em;
+	position:absolute;
+	left:5px;
+	top:80px;
+	z-index:10;
+	
 }
 
