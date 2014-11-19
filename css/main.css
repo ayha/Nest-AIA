@@ -304,6 +304,11 @@ section .intro{
 	color:#d31145;
 	font-size:0.9em;
 }
+
+#access, #location{
+	background-color:#eeefef;
+}
+
 }
 #timeline {
 	background-color:#000;
