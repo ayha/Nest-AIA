@@ -1,5 +1,3 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -55,7 +53,9 @@ html, body{
 	font-size:16px;
 	color:#58595b;
 	background:#fff;
+
 }
+
 
 
 body {
@@ -70,6 +70,13 @@ p, li{
 	
 	
 }
+
+@media (max-width: 767px) {
+	html, body, p,li{
+		font-size:1em ;
+	}	
+}
+
 
 footer{
 	background-color:#000000;
@@ -286,6 +293,9 @@ section .intro{
 	text-align:center;
 }
 
+
+@media (min-width: 768px) {
+
 #mentorship .mentorship_content, #mentorship .mentorship_content p{
 	font-size:1.1em;
 }
@@ -294,7 +304,7 @@ section .intro{
 	color:#d31145;
 	font-size:0.9em;
 }
-
+}
 #timeline {
 	background-color:#000;
 	color:#ffffff;	
@@ -317,14 +327,14 @@ section .intro{
 
 .faq_section .faq_list{
 	
-	padding-left:30px;
+	padding-left:35px;
 }
 
 .faq_section h3{
 	font-size:1.2em;
 	color:#d31145;
 	
-	padding-left:33px;
+	padding-left:35px;
 	cursor:pointer;
 	
     position:relative;
@@ -498,6 +508,8 @@ section img{
 
 .navbar-nav>li>a{
 	border-bottom:1px solid #ccc;
+	padding:7px 15px;
+	font-size:0.8em;
 	
 }
 
@@ -524,9 +536,13 @@ section img{
 }
 
 @media (max-width: 767px) {
-	html, body{
-	
-	font-size:12px;
+
+
+section .container{
+	padding: 0 10px 25px 10px;
+}
+
+section .intro{
 	
 }
 
@@ -556,6 +572,100 @@ p.partners_title{
 	
 }
 
+
+#mentorship{
+	background-image: none;
+	background-position:center center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	min-height:0;
+	border:none;
+	
+}
+
+#mentorship .mentorship_content{
+	background-color:#ffffff;
+	max-width:100%;
+	width:100%;
+	height:auto;
+	position:relative;
+	margin:0;
+	padding:0;
+	text-align:left;;
+}
+
+#mentorship .mentorship_content, #mentorship .mentorship_content p{
+	
+}
+
+#mentorship .mentorship_content a.mentor_link{
+	color:#d31145;
+	
+}
+
+
+#timeline, #timeline h2, #timeline p{
+	background-color:transparent;
+	color:#58595b
+}
+
+ #timeline .intro p{
+ 	color:#d31145;
+ 	
+ }
+
+}
+
+.timeline_stages{
+	display:block;
+	
+	margin-bottom:15px;
+	
+}
+
+
+.timeline_stages .stage{
+	background:#f8f8f8;
+	display:block;
+	margin-bottom:5px;
+	color:#58595b;
+	padding:5px;
+}
+
+.timeline_stages .stage .stage_time{
+	
+	font-size:1em;
+}
+
+.timeline_stages .stage .stage_name{
+	text-transform:uppercase;
+	font-size:1em;
+}
+
+.timeline_milestones{
+	
+}
+
+.timeline_milestones ol{
+	
+	padding:15;
+}
+
+.timeline_milestones li{
+	margin-bottom:15px;
+	margin-left:0px;
+}
+
+.timeline_milestones .milestone {
+	color:#d82f36;
+	text-transform:uppercase;
+	font-size:1em;
+}
+
+.timeline_milestones .milestone_date{
+	font-size:1em;
+	
 }
 
 .nest_link{

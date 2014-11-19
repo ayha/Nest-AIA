@@ -38,6 +38,7 @@ $(document).ready(function(){
 		var newTop = $("#"+goto).offset().top+titleOffset+10;
 		//console.log(goto + " / " + $("#"+goto).offset());
 		$('html, body').animate({scrollTop: newTop}, 800);
+		$(".navbar-collapse").removeClass("in");
 	});
 	
 	setupSideNav();
