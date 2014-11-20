@@ -1,0 +1,592 @@
+//colors
+$white: #fff;
+$black: #000;
+$grey1: #eeefef;
+$grey2: #f8f8f8;
+$grey3: #ccc;
+$grey4: #666;
+$grey5: #333;
+$grey_bg: #58595b;
+$txt_color: #333;
+$intro_color: #d31145;
+$txt_grey: #58595b;
+$border_grey: $grey3;
+$menu_hover_grey: #999;
+$applynow_bg: #d5d7d8;
+$milestone_red: #d82f36;
+
+
+//fonts
+$font_0: dinbold;
+$font_1: dinregular;
+$font_2: dinmedium;
+$font_3: Arial;
+$font_4: Helvetica;
+$font_5: sans-serif;
+
+
+// font size
+$menu_size: 1.2em;
+$intro_size: 1.1em;
+$normal_size: 1em;
+$heading_size: 1.5em;
+
+
+@font-face {
+  font-family: $font_0;
+  src: url('../fonts/din-bold-webfont.eot');
+  src: url('../fonts/din-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/din-bold-webfont.woff2') format('woff2'), url('../fonts/din-bold-webfont.woff') format('woff'), url('../fonts/din-bold-webfont.ttf') format('truetype'), url('../fonts/din-bold-webfont.svg#dinbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font_1;
+  src: url('../fonts/din-regular-webfont.eot');
+  src: url('../fonts/din-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/din-regular-webfont.woff2') format('woff2'), url('../fonts/din-regular-webfont.woff') format('woff'), url('../fonts/din-regular-webfont.ttf') format('truetype'), url('../fonts/din-bold-regular.svg#dinregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: $font_2;
+  src: url('../fonts/din-medium-webfont.eot');
+  src: url('../fonts/din-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/din-medium-webfont.woff2') format('woff2'), url('../fonts/din-medium-webfont.woff') format('woff'), url('../fonts/din-medium-webfont.ttf') format('truetype'), url('../fonts/din-medium-webfont.svg#dinmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+//@extend-elements
+
+
+body {
+  padding-top: 50px;
+}
+
+html, body, p, li{
+  font-family: $font_1, $font_3, $font_4, $font_5;
+}
+
+p {
+ 
+  font-size: 1em;
+  margin-bottom: 25px;
+  &.partners_title {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+  }
+}
+li {
+  
+  font-size: 1em;
+}
+
+.clearfix {
+  clear: both;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font_0, $font_3, $font_4, $font_5;
+}
+h2 {
+ 
+  font-size: 1.3em;
+  color: $txt_grey;
+  margin: 40px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.header_banner {
+  margin-top: 45px;
+}
+
+#mentorship {
+  background-image: url(../images/mentorship_background.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  min-height: 710px;
+  border: 1px solid $border_grey;
+  h2 {
+    background-image: url(../images/mentorship_icon.png);
+  }
+  .mentorship_content {
+    background-color: $white;
+    max-width: 500px;
+    width: 100%;
+    height: 550px;
+    position: relative;
+    padding: 25px;
+    text-align: center;
+  }
+  a.mentor_link{
+    color:$intro_color;
+  }
+}
+
+#timeline {
+  background-color: $black;
+  
+  h2 {
+    background-image: url(../images/timeline_icon.png);
+    color: $white;
+  }
+ 
+ 
+}
+#contact {
+  background-color: $black;
+  color: $white;
+  h2 {
+    background-image: url(../images/contact_icon.png);
+    color: $white;
+  }
+  p {
+    color: $white;
+  }
+  a {
+    color: $white;
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    .container {
+      padding: 0 10px 25px;
+    }
+   
+  }
+  .sponsors {
+    z-index: 2;
+  }
+  .sponsor {
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 190px;
+    }
+  }
+ 
+  #mentorship {
+    background-image: none;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    min-height: 0;
+    border: none;
+    .mentorship_content {
+      background-color: $white;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+     
+    }
+  }
+  #timeline {
+    background-color: transparent;
+    color: $txt_grey;
+    h2 {
+      background-color: transparent;
+      color: $txt_grey;
+    }
+    p {
+      background-color: transparent;
+      color: $txt_grey;
+    }
+    
+  }
+  p.partners_title {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 0.9em;
+  }
+}
+footer {
+  background-color: $black;
+  font-size: 0.8em;
+  text-align: right;
+  padding: 25px;
+}
+a {
+  text-decoration: underline;
+  color: $txt_grey;
+  &:hover {
+    text-decoration: none;
+  }
+  &:link {
+  }
+  &:visited {
+  }
+  &:active {
+  }
+  &.applynow {
+    //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+    border-radius: 10px;
+    color: $intro_color;
+    background: $applynow_bg;
+  }
+  &.mobile_nest_link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    position: absolute;
+    left: 5px;
+    top: 80px;
+    z-index: 10;
+  }
+}
+
+.partners_img {
+  width: 100%;
+  max-width: 1365px;
+}
+.navbar {
+  height: 100px;
+  background: $white;
+}
+.navbar-brand {
+  height: auto;
+  padding: 5px 15px;
+}
+.navbar-nav {
+  background: $white;
+}
+.navbar-nav>li>a {
+  //Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  text-shadow: none;
+  font-size: 1em;
+  color: $txt_grey;
+  padding: 5px 15px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  font-family: $font_2, $font_3, $font_4, $font_5;
+  text-decoration: none;
+  &:hover {
+  }
+}
+.section_apply_now {
+  text-align: center;
+  margin: 40px auto 25px auto;
+  a.applynow {
+    padding: 8px 8px 8px 30px;
+    background-image: url(../images/applynow_icon.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+section {
+  .container {
+    padding: 0 40px 25px;
+    margin: 0 auto;
+    max-width: 900px;
+    h2 {
+      padding: 80px 0 0;
+      background-position: center top;
+      background-repeat: no-repeat;
+    }
+  }
+  .intro {
+    color: $intro_color;
+    font-size: 1.1em;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .col-sm-15 {
+    width: 20%;
+    float: left;
+  }
+}
+.faq_section {
+  .faq_list {
+    padding-left: 35px;
+  }
+  h3 {
+    font-size: 1.2em;
+    color: $intro_color;
+    padding-left: 35px;
+    cursor: pointer;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 26px;
+      height: 13px;
+      top: 2px;
+      left: 0;
+      z-index: 1;
+      background-image: url(../images/arrow_down.png);
+      background-position: left center;
+      background-repeat: no-repeat;
+      //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+      transition: all 0.3s ease-out 0s;
+    }
+  }
+  &.active h3::before {
+    //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(-180deg);
+  }
+}
+.faq {
+  margin-bottom: 25px;
+  .question {
+    margin-bottom: 5px;
+    font-family: $font_0, $font_3, $font_4, $font_5;
+    p {
+      margin-bottom: 5px;
+      font-family: $font_0, $font_3, $font_4, $font_5;
+    }
+  }
+  .answer {
+    margin-bottom: 5px;
+  }
+}
+
+
+
+
+%sidenav_red_circle{
+  background-image: url(../images/sidenav_red_dot.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  opacity:1;
+}
+
+#sidenav{
+  position: fixed;
+  right: 30px;
+  top: 250px;
+  z-index: 100;
+}
+
+#sidenav ul.nav li{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/sidenav.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    overflow: visible;
+}
+
+#sidenav ul.nav li a{
+   padding: 0;
+   margin: 0;
+   padding: 3px 27px 3px 7px;
+   text-indent: -9999px;
+   font-size: 0.75em;
+   color: $white;
+   opacity: 0;
+   //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+   transition: opacity 0.3s ease-out 0s;
+  
+}
+
+#sidenav ul.nav li a.active{
+  @extend %sidenav_red_circle;
+  text-indent:-9999;
+  
+}
+
+#sidenav ul.nav li a:hover, #sidenav ul.nav li a.active:hover{
+  @extend %sidenav_red_circle;
+  background-color: $grey_bg;
+  color: $white;
+  text-indent:0;
+  text-decoration:none;
+}
+
+
+
+@media (min-width: 991px) {
+  .navbar-nav {
+    margin-top: 40px;
+    margin-left: 5px;
+  }
+  .navbar-nav>li>a {
+    &:hover {
+      color: $menu_hover_grey;
+
+      background: none;
+    }
+    &.applynow {
+      color: $intro_color;
+      background-color: $applynow_bg;
+      &:hover {
+        color: $white;
+        background-color: $applynow_bg;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .collapse {
+    background: #FFFFFF;
+    li {
+      float: none;
+    }
+  }
+  .navbar-nav>li>a {
+    border-bottom: 1px solid $border_grey;
+    padding: 7px 15px;
+    font-size: 0.8em;
+    &:hover {
+      background: $menu_hover_grey;
+      color: $white;
+    }
+    &.applynow {
+      background: none;
+      //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+      border-radius: 0;
+      &:hover {
+        color: $white;
+        background: $menu_hover_grey;
+      }
+    }
+  }
+}
+.timeline_stages {
+  display: block;
+  margin-bottom: 15px;
+  .stage {
+    background: $grey2;
+    display: block;
+    margin-bottom: 5px;
+    color: $txt_grey;
+    padding: 5px;
+    .stage_time {
+      font-size: 1em;
+    }
+    .stage_name {
+      text-transform: uppercase;
+      font-size: 1em;
+    }
+  }
+}
+.timeline_milestones {
+  ol {
+    padding: 15;
+  }
+  li {
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+  .milestone {
+    color: $milestone_red;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+  .milestone_date {
+    font-size: 1em;
+  }
+}
+.nest_link {
+  margin-top: -80px;
+  text-align: center;
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+    color: $grey4;
+    line-height: 0.7em;
+    margin-top: 10px;
+  }
+}
+
+
+//.col-xs-15, .col-sm-15, .col-md-15, .col-lg-15
+%fivecols{
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+.col-xs-15 {
+  @extend %fivecols;
+  width: 20%;
+  float: left;
+}
+.col-sm-15 {
+  @extend %fivecols;
+}
+.col-md-15 {
+  @extend %fivecols;
+}
+.col-lg-15 {
+  @extend %fivecols;
+}
+@media (min-width: 992px) {
+  .col-md-15 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-15 {
+    width: 20%;
+    float: left;
+  }
+}
+.jumbotron.fullwidth {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background: $white;
+  padding-bottom: 0;
+  img {
+    width: 100%;
+  }
+}
+.fullwidth .container {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-toggle .icon-bar {
+  background-color: $grey5;
+  width: 30px;
+  height: 3px;
+}
+.section_footer_image img {
+  width: 100%;
+}
+#howitworks h2 {
+  background-image: url(../images/howitworks_icon.png);
+}
+#access h2 {
+  background-image: url(../images/access_icon.png);
+}
+#who h2 {
+  background-image: url(../images/who_icon.png);
+}
+#location h2 {
+  background-image: url(../images/location_icon.png);
+}
+#faqs h2 {
+  background-image: url(../images/faq_icon.png);
+}
+.faq_answer p {
+  margin-bottom: 5px;
+}
