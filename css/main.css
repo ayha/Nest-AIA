@@ -159,7 +159,7 @@ p.partners_title{
 }
 
 .navbar{
-	height:90px;
+	height:100px;
 	
 	background:#fff;
 }
@@ -458,7 +458,7 @@ section .intro{
 
 	
 .navbar-nav{
-	margin-top:20px;
+	margin-top:40px;
 	margin-left:5px;
 }
 .navbar-nav>li>a{
