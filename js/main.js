@@ -32,7 +32,7 @@ $(document).ready(function(){
 		onPageScroll();
 	});
 	
-	$(".nav li a.navlink").on("click", function(e){
+	$(".nav li a.navlink, .contentlink").on("click", function(e){
 		e.preventDefault();
 		var goto = $(this).data("section");
 		var newTop = $("#"+goto).offset().top+titleOffset+10;
